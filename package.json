@@ -1,0 +1,28 @@
+{
+  "name": "electron-vtk",
+  "version": "1.0.0",
+  "description": "A vtk.js application on electron",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron": "electron .",
+    "dev-server": "webpack-dev-server",
+    "build:dev": "webpack --progress --colors --mode development",
+    "build:prod": "webpack --progress --colors --mode production --env production",
+    "commit": "git cz",
+    "semantic-release": "semantic-release"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "electron": "^3.0.6",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "vtk.js": "^7.13.5"
+  },
+  "devDependencies": {
+    "kw-web-suite": "^8.0.0"
+  }
+}
