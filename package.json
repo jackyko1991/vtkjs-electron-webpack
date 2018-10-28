@@ -11,8 +11,9 @@
     "build:prod": "webpack --progress --colors --mode production --env production",
     "commit": "git cz",
     "semantic-release": "semantic-release",
-    "packager-mac": "electron-packager . --platform=darwin --electron-version=1.7.9  --overwrite",
-    "packager-win": "electron-packager . vtkjs-electron --overwrite --platform=win32 --arch=x64 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName='VTK.js Electron App'"
+    "packager-mac": "electron-packager . --platform=darwin --electron-version=1.7.9 --arch=x64 --overwrite",
+    "packager-win": "electron-packager . vtkjs-electron --overwrite --platform=win32 --arch=x64 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName='VTK.js Electron App'",
+    "packager-linux": "electron-packager . vtkjs-electron --overwrite --asar=true --platform=linux --arch=x64 --prune=true --out=release-builds"
   },
   "author": "",
   "license": "ISC",
